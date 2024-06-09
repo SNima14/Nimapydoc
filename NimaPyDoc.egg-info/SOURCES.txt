@@ -1,0 +1,8 @@
+README.md
+setup.py
+NimaPyDoc.egg-info/PKG-INFO
+NimaPyDoc.egg-info/SOURCES.txt
+NimaPyDoc.egg-info/dependency_links.txt
+NimaPyDoc.egg-info/top_level.txt
+Nimapydoc/__init__.py
+Nimapydoc/main.py
