@@ -29,9 +29,13 @@
           |  Written by:              |
           |  ~~>  NIMA HOMAM !        |
          ||===========================||
-          | Version: 1.2.1            |
+          | Version: 1.2.2            |
           | Date:6/10/2024            |             
          ||===========================||
+
+         |||>new update version 1.2.2 features:
+            :: Adding a new decorator for repeating a function as desired with a set delay
+
 """
 
 import time
