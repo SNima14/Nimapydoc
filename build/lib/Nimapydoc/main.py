@@ -29,8 +29,8 @@
           |  Written by:              |
           |  ~~>  NIMA HOMAM !        |
          ||===========================||
-          | Version: 1.1.2            |
-          | Date:6/9/2024             |             
+          | Version: 1.2.1            |
+          | Date:6/10/2024            |             
          ||===========================||
 """
 
@@ -91,6 +91,26 @@ class MyDecorator:
             return wrapper
 
         return decorator
+    
+    @staticmethod
+    def repeat(repeats: int = 2, delay: int | float = 0) -> Callable:
+
+        if not isinstance(repeats, int) or repeats <= 0 or delay < 0:
+            raise ValueError("Repeats must be a positive integer and delay non-negative.")
+
+        def decorator(func: Callable) -> Callable:
+            def wrapper(*args, **kwargs) -> Any:
+                result = None
+                for i in range(repeats):
+                    result = func(*args, **kwargs)
+                    if delay > 0:
+                        time.sleep(delay)
+                return result
+
+            wrapper.__name__ = func.__name__
+            return wrapper
+
+        return decorator
 
 
 """
@@ -111,16 +131,19 @@ class MyDecorator:
 
 # @MyDecorator.retry()
 # @MyDecorator.timer
+# @MyDecorator.repeat(delay=0,repeats=5)
 # def no_problem():
 #     for i in range(100000):
 #         ...
-#     return None
+#     print("h")
+#     return 5
 
 # @MyDecorator.retry()
 # @MyDecorator.timer
 # def main():
 #     problem()
-#     no_problem()
+#     a=no_problem()
+#     print(a)
 
 # if __name__ == "__main__":
 #     main()
