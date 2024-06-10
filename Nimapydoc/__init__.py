@@ -1,4 +1,3 @@
-from .main import *
 """
         |>||=====================||<|
         |                           |
@@ -30,11 +29,14 @@ from .main import *
           |  Written by:              |
           |  ~~>  NIMA HOMAM !        |
          ||===========================||
-          | Version: 1.2.3            |
-          | Date:6/10/2024            |             
+          | Version: 2.1.1            |
+          | Date:6/11/2024            |             
          ||===========================||
 
-         |||>new update version 1.2.3 features:
-            :: Adding a new decorator for repeating a function as desired with a set delay
+         |||>new update version 2.1.1 features:
+            :: Adding a new decorator for creating version for your functions!
+            :: Removing six module!
+            :: Adding a new class YourPersonalVersion for create version for everything!
 
 """
+from .main import *

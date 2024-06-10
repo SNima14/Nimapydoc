@@ -1,4 +1,3 @@
-from .main import *
 """
         |>||=====================||<|
         |                           |
@@ -38,3 +37,4 @@ from .main import *
             :: Adding a new decorator for repeating a function as desired with a set delay
 
 """
+from .main import *
