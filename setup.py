@@ -3,7 +3,7 @@ from setuptools import setup,find_packages
 
 setup(
     name="NimaPyDoc",
-    version="1.2.3",
+    version="2.1.1",
     packages=find_packages(),
 
 )
