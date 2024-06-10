@@ -154,26 +154,26 @@ class YourPersonalVersion:
         >===>>================<<===<
 """
 
-@MyDecorator.retry()
-def problem():
-    time.sleep(1)
-    raise Exception("connecting...")
-@MyDecorator.createFuncVersion()
-@MyDecorator.retry()
-@MyDecorator.timer
-@MyDecorator.repeat(delay=0,repeats=5)
-def no_problem():
-    for i in range(100000):
-        ...
-    print("h")
-    return 5
+# @MyDecorator.retry()
+# def problem():
+#     time.sleep(1)
+#     raise Exception("connecting...")
+# @MyDecorator.createFuncVersion()
+# @MyDecorator.retry()
+# @MyDecorator.timer
+# @MyDecorator.repeat(delay=0,repeats=5)
+# def no_problem():
+#     for i in range(100000):
+#         ...
+#     print("h")
+#     return 5
 
-@MyDecorator.retry()
-@MyDecorator.timer
-def main():
-    problem()
-    a=no_problem()
-    print(repr(no_problem.version) +"  " +str(a) )
+# @MyDecorator.retry()
+# @MyDecorator.timer
+# def main():
+#     problem()
+#     a=no_problem()
+#     print(repr(no_problem.version) +"  " +str(a) )
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()

@@ -29,11 +29,11 @@
           |  Written by:              |
           |  ~~>  NIMA HOMAM !        |
          ||===========================||
-          | Version: 2.1.1            |
+          | Version: 2.1.2            |
           | Date:6/11/2024            |             
          ||===========================||
 
-         |||>new update version 2.1.1 features:
+         |||>new update version 2.1.2 features:
             :: Adding a new decorator for creating version for your functions!
             :: Removing six module!
             :: Adding a new class YourPersonalVersion for create version for everything!
