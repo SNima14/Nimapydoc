@@ -29,14 +29,12 @@
           |  Written by:              |
           |  ~~>  NIMA HOMAM !        |
          ||===========================||
-          | Version: 2.1.2            |
+          | Version: 2.2.1            |
           | Date:6/11/2024            |             
          ||===========================||
 
-         |||>new update version 2.1.2 features:
-            :: Adding a new decorator for creating version for your functions!
-            :: Removing six module!
-            :: Adding a new class YourPersonalVersion for create version for everything!
+         |||>new update version 2.2.1 features:
+            :: Adding a new decorator for to limit the number of times a function can be called!
 
 """
 from .main import *
